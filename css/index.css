@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*쌤이 해준 정리 - MAIN*/
+body {
+    background-image: url(../images/bg_body.png);
+}
+
+.wrap {
+    width: 1200px;
+    margin: 50px auto;
+    position: relative;
+    /*쌤이 해준 정리 - footer 위치 기준!*/
+
+    overflow: hidden;
+    /*쌤이 해준 정리 - float 해제를 위한 설정*/
+
+    /*outline: 2px solid red;*/
+}
+
+header {
+    width: 210px;
+    height: 848px;
+    background: url(../images/bg_head.jpg) no-repeat;
+    background-size: 100% 100%;
+    float: left;
+    padding: 50px 40px 0;
+    box-sizing: border-box;
+    /*background-color: plum;*/
+}
+
+header h1 a,
+header nav a {
+    display: block;
+    background: url(../images/bg_gnb.png) no-repeat;
+    text-indent: -9999px;
+}
+
+nav ul li {
+    margin: 20px auto;
+}
+
+nav ul li a {
+    /*line-height: 50px;*/
+    padding: 10px 0;
+}
+
+/*쌤이 해준 정리 - nav 메뉴 위치 조절*/
+nav ul li.history a {
+    background-position: -40px -38px;
+}
+
+nav ul li.history a:hover {
+    background-position: -250px -38px;
+}
+
+nav ul li.innovation a {
+    background-position: -40px -110px;
+}
+
+nav ul li.innovation a:hover {
+    background-position: -250px -110px;
+}
+
+nav ul li.new a {
+    background-position: -40px -184px;
+}
+
+nav ul li.new a:hover {
+    background-position: -250px -184px;
+}
+
+nav ul li.book a {
+    background-position: -40px -255px;
+}
+
+nav ul li.book a:hover {
+    background-position: -250px -255px;
+}
+
+nav ul li.event a {
+    background-position: -40px -316px;
+}
+
+nav ul li.event a:hover {
+    background-position: -250px -316px;
+}
+
+section {
+    width: 960px;
+    height: 848px;
+    background: url(../images/bg_main.gif) no-repeat;
+    float: right;
+    position: relative;
+}
+
+section a {
+    display: block;
+    position: absolute;
+    /*text-indent: -9999px;*/
+    font-size: 0;
+    transition: all 0.5s;
+}
+
+section a:hover {
+    background-position: right;
+}
+
+section a.con_book {
+    width: 296px;
+    height: 320px;
+    background-image: url(../images/img_main01.png);
+    /*left: 0;
+    top: 0;*/
+    /*background-color: plum;*/
+}
+
+/*section a.con_book:hover {
+    background-position: right;
+}*/
+
+section a.con_history {
+    width: 295px;
+    height: 314px;
+    background-image: url(../images/img_main02.png);
+    right: 0;
+    top: 267px;
+}
+
+section a.con_movie {
+    width: 296px;
+    height: 222px;
+    background-image: url(../images/img_main03.png);
+    /*top: 506px;*/
+    bottom: 120px;
+}
+
+section a.con_innovation {
+    width: 369px;
+    height: 120px;
+    background-image: url(../images/img_main04.png);
+    /*top: 728px;*/
+    bottom: 0;
+    left: 296px;
+}
+
+section a.con_event {
+    width: 160px;
+    height: 268px;
+    background-image: url(../images/img_main05.png);
+    right: 135.5px;
+    /*top: 580px;*/
+    bottom: 0;
+}
+
+footer {
+    /*clear: both;*/
+    position: absolute;
+    width: 150px;
+    left: 30px;
+    bottom: 50px;
+    text-indent: -9999px;
+    /*background-color: plum;*/
+}
+
+footer address {
+    background: url(../images/bg_footer.png) no-repeat;
+    height: 30px;
+    margin: 0 0 20px;
+}
+
+footer p {
+    background: url(../images/bg_footer.png) no-repeat left -36px;
+    height: 40px;
+    margin: 0 0 20px;
+}
+
+footer .sns a {
+    width: 36px;
+    height: 36px;
+    display: block;
+    background-image: url(../images/bg_footer.png);
+    float: left;
+    /*outline: 2px solid orange;*/
+}
+
+footer .sns a:first-child {
+    margin: 0 10px 0 0;
+    background-position: left bottom;
+}
+
+footer .sns a:last-child {
+    background-position: -46px bottom;
+}
